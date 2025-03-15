@@ -8,10 +8,10 @@ import { WishItem } from '../shared/models/wishItem';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  items = [
-    new WishItem('Visit Japan', true),
-    new WishItem('Go to the gym', false),
-    new WishItem('Go eat infinite sushi', false)
+  items : WishItem[] = [
+    // new WishItem('Visit Japan', true),
+    // new WishItem('Go to the gym', false),
+    // new WishItem('Go eat infinite sushi', false)
   ];
   title = 'wishlist';
 }
