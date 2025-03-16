@@ -20,11 +20,5 @@ export class AppComponent {
     new WishItem('Go eat infinite sushi', true)
   ];
 
-  listFilter : any = '0';
-
-  title = 'wishlist';
-
-  get visibleItems() : WishItem[] {
-    return this.items.filter(filters[this.listFilter]);
-  };
+  filter: any = () => {};
 }
