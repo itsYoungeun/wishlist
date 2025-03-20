@@ -20,5 +20,5 @@ export class AppComponent {
     new WishItem('Go eat infinite sushi', true)
   ];
 
-  filter: any = () => {};
+  filter: any;
 }
