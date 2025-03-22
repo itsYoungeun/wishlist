@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { WishItem } from '../shared/models/wishItem';
 
-const filters = [
-  (item : WishItem) => item,
-  (item : WishItem) => !item.isComplete,
-  (item : WishItem) => item.isComplete,
-];
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

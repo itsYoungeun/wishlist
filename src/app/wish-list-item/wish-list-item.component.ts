@@ -3,6 +3,7 @@ import { WishItem } from '../../shared/models/wishItem';
 
 @Component({
   selector: 'wish-list-item',
+  standalone: false,
   templateUrl: './wish-list-item.component.html',
   styleUrls: ['./wish-list-item.component.css']
 })
