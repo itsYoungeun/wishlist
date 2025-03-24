@@ -25,5 +25,3 @@ export class AppComponent {
 
   filter: any;
 }
-
-// refactoring the wishlistitem component
