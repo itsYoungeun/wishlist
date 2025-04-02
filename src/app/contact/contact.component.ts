@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -13,14 +13,17 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  senderNameControl = new FormControl('');
-  senderEmailControl = new FormControl('');
-  senderMessageControl = new FormControl('');
+  contactForm = new FormGroup({
+    senderName: new FormControl(''),
+    senderEmail: new FormControl(''),
+    senderMessage: new FormControl('')
+  });
 
   submitForm() {
-    if (this.senderNameControl.dirty) {
-      alert('you changed the name field');
-    }
+    console.log(this.contactForm.value);
+    // if (this.senderNameControl.dirty) {
+    //   alert('you changed the name field');
+    // }
   }
 
 
